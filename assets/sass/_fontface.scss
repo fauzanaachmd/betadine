@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Gotham Light Italic';
+  src: url('../fonts/Gotham-LightItalic.eot');
+  src: url('../fonts/Gotham-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gotham-LightItalic.woff2') format('woff2'),
+  url('../fonts/Gotham-LightItalic.woff') format('woff'),
+  url('../fonts/Gotham-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham Light';
+  src: url('../fonts/Gotham-Light.eot');
+  src: url('../fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gotham-Light.woff2') format('woff2'),
+  url('../fonts/Gotham-Light.woff') format('woff'),
+  url('../fonts/Gotham-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
