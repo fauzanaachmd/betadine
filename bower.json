@@ -1,0 +1,12 @@
+{
+  "name": "betadine",
+  "description": "Betadine Front End",
+  "version": "0.0.1",
+  "homepage": "https://github.com/janskiachmd/betadine.git",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jQuery": "^3.2.1"
+  }
+}

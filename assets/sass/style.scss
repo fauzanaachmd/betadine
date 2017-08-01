@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+}
+
+.hero-banner {
+  background: url("../img/hero-banner-bg.png") no-repeat;
+  background-size: cover;
+  height: 120vh;
+  width: 100%;
+  position: relative;
+
+  .hero-image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
