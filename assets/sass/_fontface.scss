@@ -19,3 +19,25 @@
   font-weight: 300;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'SP Marker Font';
+  src: url('../fonts/SPMarkerFontRegular.eot');
+  src: url('../fonts/SPMarkerFontRegular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SPMarkerFontRegular.woff2') format('woff2'),
+  url('../fonts/SPMarkerFontRegular.woff') format('woff'),
+  url('../fonts/SPMarkerFontRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Medium';
+  src: url('../fonts/Gotham-Medium.eot');
+  src: url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gotham-Medium.woff2') format('woff2'),
+  url('../fonts/Gotham-Medium.woff') format('woff'),
+  url('../fonts/Gotham-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}

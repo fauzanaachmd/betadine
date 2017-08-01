@@ -12,9 +12,28 @@
   font-weight: 300;
   font-style: normal;
 }
+@font-face {
+  font-family: 'SP Marker Font';
+  src: url("../fonts/SPMarkerFontRegular.eot");
+  src: url("../fonts/SPMarkerFontRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SPMarkerFontRegular.woff2") format("woff2"), url("../fonts/SPMarkerFontRegular.woff") format("woff"), url("../fonts/SPMarkerFontRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham Medium';
+  src: url("../fonts/Gotham-Medium.eot");
+  src: url("../fonts/Gotham-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Medium.woff2") format("woff2"), url("../fonts/Gotham-Medium.woff") format("woff"), url("../fonts/Gotham-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
 * {
   margin: 0;
   font-family: 'Gotham Light';
+  font-size: 18px;
+}
+
+p b {
+  font-family: 'Gotham Medium';
 }
 
 .container {
@@ -47,6 +66,43 @@
 .section2 .section2-video {
   margin: 60px auto 30px auto;
   display: table;
+  position: relative;
+  z-index: 1;
+}
+
+/* END OF SECTION 2 STYLE */
+.section3 {
+  background: #f29dc3;
+  padding: 170px 0 30px 0;
+  position: relative;
+  margin-top: -140px;
+}
+.section3:before {
+  position: absolute;
+  width: 100%;
+  height: 28px;
+  content: '';
+  top: -28px;
+  background: url("../img/section2-footer-bg.png") repeat-x;
+}
+.section3 .section3-table {
+  margin: 30px auto;
+}
+.section3 .transparent-box {
+  display: table;
+  position: relative;
+  margin: 30px auto;
+}
+.section3 .transparent-box .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding: 10px 25px;
+}
+.section3 .transparent-box h4 {
+  font-family: 'SP Marker Font';
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
