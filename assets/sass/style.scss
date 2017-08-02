@@ -9,6 +9,13 @@ p {
   b {
     font-family: 'Gotham Medium';
   }
+  .p-pink {
+    color: #e53d8a;
+    font-family: 'Gotham Medium';
+  }
+}
+a {
+  color: #f29dc3;
 }
 
 .container {
@@ -50,6 +57,18 @@ p {
     img {
       width: 100%;
     }
+  }
+}
+
+.dark-pink-box {
+  background: #e53d8a;
+  color: white;
+  position: relative;
+
+  .avatar {
+    right: initial;
+    left: -143px;
+    top: -14px;
   }
 }
 
