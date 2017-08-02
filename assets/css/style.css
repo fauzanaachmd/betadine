@@ -50,6 +50,33 @@ p b {
   margin: 30px 0;
 }
 
+.pink-box {
+  width: 860px;
+  margin: 0 auto 30px auto;
+  background: #fadae8;
+  border-radius: 10px;
+  padding: 30px;
+}
+.pink-box .content {
+  width: 100%;
+  padding: 10px 25px;
+}
+.pink-box .avatar {
+  width: 190px;
+  height: 190px;
+  border: 3px solid #e5408c;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  right: -95px;
+  top: 10%;
+}
+.pink-box .avatar img {
+  width: 100%;
+}
+
 /* HERO SECTION STYLE */
 .hero-banner {
   background: url("../img/hero-banner-bg.png") no-repeat;
@@ -196,5 +223,14 @@ p b {
 }
 
 /* END OF SECTION 6 STYLE */
+/* SECTION 7 STYLE */
+.section7 {
+  padding: 30px 0;
+}
+.section7 .pink-box .avatar {
+  top: 0;
+}
+
+/* END OF SECTION 7 STYLE */
 
 /*# sourceMappingURL=style.css.map */
