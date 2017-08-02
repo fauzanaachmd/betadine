@@ -26,6 +26,13 @@
   font-weight: 500;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Mayton';
+  src: url("../fonts/Mayton.eot");
+  src: url("../fonts/Mayton.eot?#iefix") format("embedded-opentype"), url("../fonts/Mayton.woff2") format("woff2"), url("../fonts/Mayton.woff") format("woff"), url("../fonts/Mayton.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   font-family: 'Gotham Light';
@@ -229,6 +236,41 @@ p b {
 }
 .section7 .pink-box .avatar {
   top: 0;
+}
+
+/* END OF SECTION 7 STYLE */
+/* SECTION 7 STYLE */
+.section8 {
+  background: url("../img/section8-bg.png") no-repeat center top;
+  padding: 120px 0;
+  position: relative;
+}
+.section8:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 98px;
+  background: url("../img/section8-top-line.png") no-repeat left top;
+  top: 0;
+}
+.section8 .pink-box {
+  width: 680px;
+}
+.section8 .pink-box .avatar {
+  top: 0;
+}
+.section8 .pembalut {
+  background: url("../img/section8-pembalut.png") no-repeat;
+  width: 510px;
+  height: 474px;
+  position: absolute;
+  top: 90px;
+  left: 0;
+}
+.section8 .section8-title {
+  font-family: 'Mayton';
+  text-align: center;
+  font-size: 54px;
 }
 
 /* END OF SECTION 7 STYLE */

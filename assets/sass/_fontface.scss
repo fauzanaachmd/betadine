@@ -41,3 +41,14 @@
   font-weight: 500;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Mayton';
+  src: url('../fonts/Mayton.eot');
+  src: url('../fonts/Mayton.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Mayton.woff2') format('woff2'),
+  url('../fonts/Mayton.woff') format('woff'),
+  url('../fonts/Mayton.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
