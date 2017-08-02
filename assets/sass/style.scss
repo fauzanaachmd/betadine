@@ -13,6 +13,15 @@ p {
 
 .container {
   width: 960px;
+
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+}
+
+.center {
+  text-align: center;
+  margin: 30px 0;
 }
 
 /* HERO SECTION STYLE */
@@ -48,6 +57,7 @@ p {
 }
 /* END OF SECTION 2 STYLE */
 
+/* SECTION 3 STYLE */
 .section3 {
   background: #f29dc3;
   padding: 170px 0 30px 0;
@@ -64,6 +74,12 @@ p {
   }
   .section3-table {
     margin: 30px auto;
+
+    tr {
+      td {
+        padding: 15px;
+      }
+    }
   }
   .transparent-box {
     display: table;
@@ -80,6 +96,46 @@ p {
     h4 {
       font-family: 'SP Marker Font';
       text-align: center;
+    }
+  }
+}
+/* END OF SECTION 3 STYLE */
+
+.section4 {
+  padding: 30px 0;
+
+  .section4-quotes {
+    margin-bottom: 30px;
+  }
+  .kata-dokter {
+    width: 699px;
+    height: 235px;
+    margin: 0 auto;
+    position: relative;
+
+    .content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top:0;
+      left: 0;
+      padding: 13px 100px 13px 30px;
+    }
+    .avatar {
+      width: 190px;
+      height: 190px;
+      border: 3px solid #e5408c;
+      border-radius: 50%;
+      display: block;
+      text-align: center;
+      overflow: hidden;
+      position: absolute;
+      right: -95px;
+      top: 10%;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }
