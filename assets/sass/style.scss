@@ -86,6 +86,14 @@ a {
   font-size: 54px;
 }
 
+.sp-marker-title {
+  font-family: 'SP Marker Font';
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 /* HERO SECTION STYLE */
 .hero-banner {
   background: url("../img/hero-banner-bg.png") no-repeat;
@@ -271,7 +279,11 @@ a {
   }
   .pink-box {
     width: 680px;
+    position: relative;
 
+    .content {
+      padding: 10px 65px 10px 25px;
+    }
     .avatar {
       top: 0;
     }
@@ -351,3 +363,32 @@ a {
   }
 }
 /* END OF SECTION 11 STYLE */
+.section12 {
+  padding: 30px 0;
+  position: relative;
+  background: #f8bdd6;
+
+  &:before, &:after {
+    position: absolute;
+    width: 100%;
+    content: '';
+    background: url("../img/section12-line-gb.png") repeat-x;
+    height: 32px;
+  }
+  &:before {
+    top: -16px;
+  }
+  &:after {
+    bottom: -16px;
+  }
+  .container {
+    position: relative;
+    padding-bottom: 95px;
+
+    .bingung-wrapper {
+      position: absolute;
+      right: -60px;
+      bottom: 0;
+    }
+  }
+}
