@@ -71,6 +71,7 @@ a {
   background: #fadae8;
   border-radius: 10px;
   padding: 30px;
+  position: relative;
 }
 .pink-box .content {
   width: 100%;
@@ -372,6 +373,7 @@ a {
 }
 
 /* END OF SECTION 11 STYLE */
+/* SECTION 12 STYLE */
 .section12 {
   padding: 30px 0;
   position: relative;
@@ -400,6 +402,8 @@ a {
   bottom: 0;
 }
 
+/* END OF SECTION 12 STYLE */
+/* SECTION 13 STYLE */
 .section13 {
   padding: 30px 0 329px 0;
   position: relative;
@@ -426,5 +430,13 @@ a {
   height: 100%;
   padding: 70px;
 }
+
+/* END OF SECTION 13 STYLE */
+/* SECTION 14 STYLE */
+.section14 {
+  padding: 30px 0;
+}
+
+/* END OF SECTION 14 STYLE */
 
 /*# sourceMappingURL=style.css.map */
