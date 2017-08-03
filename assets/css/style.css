@@ -33,6 +33,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url("../fonts/Gotham-Bold.eot");
+  src: url("../fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Bold.woff2") format("woff2"), url("../fonts/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 * {
   margin: 0;
   font-family: 'Gotham Light';
@@ -438,5 +445,11 @@ a {
 }
 
 /* END OF SECTION 14 STYLE */
+footer p {
+  font-size: 18px;
+}
+footer p b {
+  font-family: 'Gotham Bold';
+}
 
 /*# sourceMappingURL=style.css.map */
