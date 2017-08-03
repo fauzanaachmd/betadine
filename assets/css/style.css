@@ -96,6 +96,11 @@ a {
   background: #e53d8a;
   color: white;
   position: relative;
+  margin: 30px auto;
+}
+.dark-pink-box.right-ava .avatar {
+  left: initial;
+  right: -143px;
 }
 .dark-pink-box .avatar {
   right: initial;

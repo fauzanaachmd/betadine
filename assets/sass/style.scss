@@ -64,7 +64,14 @@ a {
   background: #e53d8a;
   color: white;
   position: relative;
+  margin: 30px auto;
 
+  &.right-ava {
+    .avatar {
+      left: initial;
+      right: -143px;
+    }
+  }
   .avatar {
     right: initial;
     left: -143px;
