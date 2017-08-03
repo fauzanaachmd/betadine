@@ -79,6 +79,12 @@ a {
   }
 }
 
+.mayton-title {
+  font-family: 'Mayton';
+  text-align: center;
+  font-size: 54px;
+}
+
 /* HERO SECTION STYLE */
 .hero-banner {
   background: url("../img/hero-banner-bg.png") no-repeat;
@@ -248,7 +254,7 @@ a {
 }
 /* END OF SECTION 7 STYLE */
 
-/* SECTION 7 STYLE */
+/* SECTION 8 STYLE */
 .section8 {
   background: url("../img/section8-bg.png") no-repeat center top;
   padding: 120px 0;
@@ -277,10 +283,31 @@ a {
     top:90px;
     left: 0;
   }
-  .section8-title {
-    font-family: 'Mayton';
-    text-align: center;
-    font-size: 54px;
+}
+/* END OF SECTION 8 STYLE */
+
+/* SECTION 9 STYLE */
+.section9 {
+  //padding: 30px 0;
+  width: 100%;
+  height: 113vh;
+  background: url("../img/section9-bg.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+    height: 100%;
+  }
+  .mayton-title {
+    margin-top: 260px;
+    margin-bottom: 30px;
+  }
+  .cewek-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
-/* END OF SECTION 7 STYLE */
+/* SECTION 9 STYLE */
