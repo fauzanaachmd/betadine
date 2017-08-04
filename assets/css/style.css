@@ -46,6 +46,10 @@
   font-size: 18px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 p b {
   font-family: 'Gotham Medium';
 }
