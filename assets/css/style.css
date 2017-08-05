@@ -143,11 +143,26 @@ a {
   width: 100%;
   position: relative;
 }
+@media (max-width: 480px) {
+  .hero-banner {
+    background: url("../img/hero-banner-bg(480px).png") no-repeat;
+  }
+}
 .hero-banner .hero-image {
   position: absolute;
   left: 50%;
   top: 44%;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 600px) {
+  .hero-banner .hero-image {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .hero-banner .hero-image img {
+    width: 100%;
+  }
 }
 
 /* END OF HERO SECTION STYLE */
@@ -163,6 +178,16 @@ a {
   display: table;
   position: relative;
   z-index: 1;
+}
+@media (max-width: 680px) {
+  .section2 .section2-video {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .section2 .section2-video {
+    height: 200px;
+  }
 }
 
 /* END OF SECTION 2 STYLE */
@@ -184,13 +209,39 @@ a {
 .section3 .section3-table {
   margin: 30px auto;
 }
+@media (max-width: 768px) {
+  .section3 .section3-table {
+    width: 100% !important;
+  }
+}
+@media (max-width: 480px) {
+  .section3 .section3-table tr td {
+    width: 100%;
+    display: block;
+  }
+}
 .section3 .section3-table tr td {
   padding: 15px;
+}
+.section3 .section3-table tr td img {
+  width: 100%;
 }
 .section3 .transparent-box {
   display: table;
   position: relative;
   margin: 30px auto;
+}
+@media (max-width: 768px) {
+  .section3 .transparent-box {
+    background: #fadae8;
+    border-radius: 15px;
+  }
+  .section3 .transparent-box .content {
+    position: relative !important;
+  }
+  .section3 .transparent-box .bg-adapter {
+    display: none;
+  }
 }
 .section3 .transparent-box .content {
   position: absolute;
