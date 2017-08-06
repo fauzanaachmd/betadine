@@ -325,6 +325,16 @@ a {
   background-size: cover;
   position: relative;
 
+  @media (max-width: 768px) {
+    .title-ribbon {
+      width: 100%;
+    }
+  }
+  @media (max-width: 400px) {
+    .rok-wanita-mobile {
+      width: 100px;
+    }
+  }
   &:before {
     content: '';
     background: url("../img/section6-top-line.png") repeat-x center;
@@ -542,6 +552,17 @@ footer {
 }
 /* END OF FOOTER STYLE */
 
+.hide768 {
+  @media(max-width:768px) {
+    display: none;
+  }
+}
+.show768 {
+  display: none;
+  @media(max-width:768px) {
+    display: inherit;
+  }
+}
 .hide600 {
   @media (max-width:600px) {
     display: none;

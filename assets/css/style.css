@@ -360,6 +360,16 @@ a {
   background-size: cover;
   position: relative;
 }
+@media (max-width: 768px) {
+  .section6 .title-ribbon {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .section6 .rok-wanita-mobile {
+    width: 100px;
+  }
+}
 .section6:before {
   content: '';
   background: url("../img/section6-top-line.png") repeat-x center;
@@ -559,6 +569,21 @@ footer p b {
 }
 
 /* END OF FOOTER STYLE */
+@media (max-width: 768px) {
+  .hide768 {
+    display: none;
+  }
+}
+
+.show768 {
+  display: none;
+}
+@media (max-width: 768px) {
+  .show768 {
+    display: inherit;
+  }
+}
+
 @media (max-width: 600px) {
   .hide600 {
     display: none;
