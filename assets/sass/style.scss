@@ -65,6 +65,12 @@ a {
   .content {
     width: 100%;
     padding: 10px 25px;
+
+    p, p b {
+      @media (max-width: 400px) {
+        font-size: 14px;
+      }
+    }
   }
   .avatar {
     width: 190px;
@@ -100,6 +106,9 @@ a {
     &.left-ava {
       padding-left: 60px;
     }
+    &.right-ava {
+      padding-right: 60px;
+    }
     .content{
       position: relative;
       background: #e53d8a;
@@ -109,6 +118,9 @@ a {
     &.left-ava .content {
       padding: 27px 27px 27px 90px !important;
     }
+    &.right-ava .content {
+      padding: 27px 90px 27px 27px !important;
+    }
     .avatar {
       top: 50% !important;
       width: 140px !important;
@@ -117,6 +129,9 @@ a {
     }
     &.left-ava .avatar {
       left: 0 !important;
+    }
+    &.right-ava .avatar {
+      right: 0 !important;
     }
   }
   &.right-ava {
@@ -506,23 +521,71 @@ a {
   .mayton-title {
     margin-top: 260px;
     margin-bottom: 30px;
+
+    @media (max-width: 600px) {
+      font-size: 30px;
+      margin-top: 100px;
+    }
   }
   .cewek-wrapper {
     position: absolute;
     bottom: 0;
     right: 0;
+
+    @media (max-width: 600px) {
+      img {
+        width: 80px;
+      }
+    }
   }
 }
 /* END OF SECTION 9 STYLE */
 
+.section10 {
+  .section10-img {
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+  .section10-img-mobile {
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+  }
+}
+
 /* SECTION 11 STYLE */
 .section11 {
+
+  .section11-infografis-mobile {
+    @media (max-width: 400px) {
+      width: 100%;
+    }
+  }
+  .section11-infografis {
+    @media (max-width: 870px) {
+      width: 100%;
+    }
+  }
+  .section11-ilustrasi {
+    @media (max-width: 900px) {
+      width: 100%;
+    }
+  }
+  .section11-ilustrasi-mobile {
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+  }
   .bg-ungu {
     background: #ed78ad;
     position: relative;
     color: white;
     height: 108px;
 
+    @media (max-width: 992px) {
+      height: inherit;
+    }
     &:after {
       position: absolute;
       content: '';
@@ -533,6 +596,9 @@ a {
     }
     p {
       margin-top: 10px;
+      @media (max-width: 992px) {
+        margin-bottom: 25px;
+      }
     }
     .container {
       position: relative;
@@ -541,6 +607,19 @@ a {
       position: absolute;
       top: 0;
       right: 0;
+      overflow: hidden;
+
+      @media (max-width: 992px) {
+        top: 50%;
+        height: 100%;
+        transform: translate(0,-50%);
+      }
+      @media (max-width: 896px) {
+        height: inherit;
+      }
+      @media (max-width: 500px) {
+        width: 16.666666666666666666666666666667%;
+      }
     }
   }
 }
@@ -573,6 +652,12 @@ a {
       position: absolute;
       right: -60px;
       bottom: 0;
+
+      @media (max-width: 768px) {
+        right: 50%;
+        bottom: -20px;
+        transform: translate(50%, 0);
+      }
     }
   }
 }
@@ -597,6 +682,16 @@ a {
     margin: 0 auto;
     position: relative;
 
+    @media (max-width: 830px) {
+      width: 100%;
+
+      .content .mayton-title {
+        font-size: 30px;
+      }
+      img {
+        width: 100%;
+      }
+    }
     .content {
       position: absolute;
       top: 0;
@@ -617,6 +712,11 @@ a {
 
 /* FOOTER STYLE */
 footer {
+  .footer-back-to {
+    @media (max-width: 550px) {
+      width: 80%;
+    }
+  }
   p {
     font-size: 18px;
 
@@ -632,14 +732,38 @@ footer {
     display: none !important;
   }
 }
+
+.hide900 {
+  @media(max-width:900px) {
+    display: none !important;
+  }
+}
+
+.show900 {
+  display: none;
+  @media(max-width:900px) {
+    display: inherit;
+  }
+}
 .hide768 {
   @media(max-width:768px) {
-    display: none;
+    display: none !important;
   }
 }
 .show768 {
   display: none;
   @media(max-width:768px) {
+    display: inherit;
+  }
+}
+.hide670 {
+  @media (max-width:670px) {
+    display: none;
+  }
+}
+.show670 {
+  display: none;
+  @media (max-width:670px) {
     display: inherit;
   }
 }
@@ -662,6 +786,17 @@ footer {
 .show560 {
   display: none;
   @media (max-width:560px) {
+    display: inherit;
+  }
+}
+.hide480 {
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+.show480 {
+  display: none;
+  @media (max-width:480px) {
     display: inherit;
   }
 }

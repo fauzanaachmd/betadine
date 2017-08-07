@@ -109,6 +109,11 @@ a {
   width: 100%;
   padding: 10px 25px;
 }
+@media (max-width: 400px) {
+  .pink-box .content p, .pink-box .content p b {
+    font-size: 14px;
+  }
+}
 .pink-box .avatar {
   width: 190px;
   height: 190px;
@@ -142,6 +147,9 @@ a {
   .dark-pink-box.left-ava {
     padding-left: 60px;
   }
+  .dark-pink-box.right-ava {
+    padding-right: 60px;
+  }
   .dark-pink-box .content {
     position: relative;
     background: #e53d8a;
@@ -149,6 +157,9 @@ a {
   }
   .dark-pink-box.left-ava .content {
     padding: 27px 27px 27px 90px !important;
+  }
+  .dark-pink-box.right-ava .content {
+    padding: 27px 90px 27px 27px !important;
   }
   .dark-pink-box .avatar {
     top: 50% !important;
@@ -158,6 +169,9 @@ a {
   }
   .dark-pink-box.left-ava .avatar {
     left: 0 !important;
+  }
+  .dark-pink-box.right-ava .avatar {
+    right: 0 !important;
   }
 }
 .dark-pink-box.right-ava .avatar {
@@ -541,19 +555,66 @@ a {
   margin-top: 260px;
   margin-bottom: 30px;
 }
+@media (max-width: 600px) {
+  .section9 .mayton-title {
+    font-size: 30px;
+    margin-top: 100px;
+  }
+}
 .section9 .cewek-wrapper {
   position: absolute;
   bottom: 0;
   right: 0;
 }
+@media (max-width: 600px) {
+  .section9 .cewek-wrapper img {
+    width: 80px;
+  }
+}
 
 /* END OF SECTION 9 STYLE */
+@media (max-width: 1200px) {
+  .section10 .section10-img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .section10 .section10-img-mobile {
+    width: 100%;
+  }
+}
+
 /* SECTION 11 STYLE */
+@media (max-width: 400px) {
+  .section11 .section11-infografis-mobile {
+    width: 100%;
+  }
+}
+@media (max-width: 870px) {
+  .section11 .section11-infografis {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .section11 .section11-ilustrasi {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .section11 .section11-ilustrasi-mobile {
+    width: 100%;
+  }
+}
 .section11 .bg-ungu {
   background: #ed78ad;
   position: relative;
   color: white;
   height: 108px;
+}
+@media (max-width: 992px) {
+  .section11 .bg-ungu {
+    height: inherit;
+  }
 }
 .section11 .bg-ungu:after {
   position: absolute;
@@ -566,6 +627,11 @@ a {
 .section11 .bg-ungu p {
   margin-top: 10px;
 }
+@media (max-width: 992px) {
+  .section11 .bg-ungu p {
+    margin-bottom: 25px;
+  }
+}
 .section11 .bg-ungu .container {
   position: relative;
 }
@@ -573,6 +639,24 @@ a {
   position: absolute;
   top: 0;
   right: 0;
+  overflow: hidden;
+}
+@media (max-width: 992px) {
+  .section11 .bg-ungu .sempak-wrapper {
+    top: 50%;
+    height: 100%;
+    transform: translate(0, -50%);
+  }
+}
+@media (max-width: 896px) {
+  .section11 .bg-ungu .sempak-wrapper {
+    height: inherit;
+  }
+}
+@media (max-width: 500px) {
+  .section11 .bg-ungu .sempak-wrapper {
+    width: 16.666666666666666666666666666667%;
+  }
 }
 
 /* END OF SECTION 11 STYLE */
@@ -604,6 +688,13 @@ a {
   right: -60px;
   bottom: 0;
 }
+@media (max-width: 768px) {
+  .section12 .container .bingung-wrapper {
+    right: 50%;
+    bottom: -20px;
+    transform: translate(50%, 0);
+  }
+}
 
 /* END OF SECTION 12 STYLE */
 /* SECTION 13 STYLE */
@@ -625,6 +716,17 @@ a {
   margin: 0 auto;
   position: relative;
 }
+@media (max-width: 830px) {
+  .section13 .custom-banner-butterfly {
+    width: 100%;
+  }
+  .section13 .custom-banner-butterfly .content .mayton-title {
+    font-size: 30px;
+  }
+  .section13 .custom-banner-butterfly img {
+    width: 100%;
+  }
+}
 .section13 .custom-banner-butterfly .content {
   position: absolute;
   top: 0;
@@ -642,6 +744,11 @@ a {
 
 /* END OF SECTION 14 STYLE */
 /* FOOTER STYLE */
+@media (max-width: 550px) {
+  footer .footer-back-to {
+    width: 80%;
+  }
+}
 footer p {
   font-size: 18px;
 }
@@ -656,9 +763,24 @@ footer p b {
   }
 }
 
+@media (max-width: 900px) {
+  .hide900 {
+    display: none !important;
+  }
+}
+
+.show900 {
+  display: none;
+}
+@media (max-width: 900px) {
+  .show900 {
+    display: inherit;
+  }
+}
+
 @media (max-width: 768px) {
   .hide768 {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -667,6 +789,21 @@ footer p b {
 }
 @media (max-width: 768px) {
   .show768 {
+    display: inherit;
+  }
+}
+
+@media (max-width: 670px) {
+  .hide670 {
+    display: none;
+  }
+}
+
+.show670 {
+  display: none;
+}
+@media (max-width: 670px) {
+  .show670 {
     display: inherit;
   }
 }
@@ -697,6 +834,21 @@ footer p b {
 }
 @media (max-width: 560px) {
   .show560 {
+    display: inherit;
+  }
+}
+
+@media (max-width: 480px) {
+  .hide480 {
+    display: none;
+  }
+}
+
+.show480 {
+  display: none;
+}
+@media (max-width: 480px) {
+  .show480 {
     display: inherit;
   }
 }
