@@ -6,6 +6,7 @@
   font-size: 18px;
 }
 
+
 img {
   image-rendering: -moz-crisp-edges;
   image-rendering:   -o-crisp-edges;
@@ -14,7 +15,7 @@ img {
   -ms-interpolation-mode: nearest-neighbor;
 }
 
-body {
+body, html {
   overflow-x: hidden;
 }
 
