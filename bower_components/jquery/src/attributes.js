@@ -8,6 +8,6 @@ define( [
 
 "use strict";
 
-// Return jQuery for attributes-only inclusion
+// Return jquery for attributes-only inclusion
 return jQuery;
 } );

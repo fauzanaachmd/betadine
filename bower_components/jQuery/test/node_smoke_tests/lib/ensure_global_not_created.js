@@ -2,7 +2,7 @@
 
 var assert = require( "assert" );
 
-// Ensure the jQuery property on global/window/module.exports/etc. was not
+// Ensure the jquery property on global/window/module.exports/etc. was not
 // created in a CommonJS environment.
 // `global` is always checked in addition to passed parameters.
 module.exports = function ensureGlobalNotCreated() {
@@ -10,6 +10,6 @@ module.exports = function ensureGlobalNotCreated() {
 
 	args.forEach( function( object ) {
 		assert.strictEqual( object.jQuery, undefined,
-			"A jQuery global was created in a CommonJS environment." );
+			"A jquery global was created in a CommonJS environment." );
 	} );
 };

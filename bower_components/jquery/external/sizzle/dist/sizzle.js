@@ -582,7 +582,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 	documentIsHTML = !isXML( document );
 
 	// Support: IE 9-11, Edge
-	// Accessing iframe documents after unload throws "permission denied" errors (jQuery #13936)
+	// Accessing iframe documents after unload throws "permission denied" errors (jquery #13936)
 	if ( preferredDoc !== document &&
 		(subWindow = document.defaultView) && subWindow.top !== subWindow ) {
 
@@ -1020,7 +1020,7 @@ Sizzle.attr = function( elem, name ) {
 	}
 
 	var fn = Expr.attrHandle[ name.toLowerCase() ],
-		// Don't get fooled by Object.prototype properties (jQuery #13807)
+		// Don't get fooled by Object.prototype properties (jquery #13807)
 		val = fn && hasOwn.call( Expr.attrHandle, name.toLowerCase() ) ?
 			fn( elem, name, !documentIsHTML ) :
 			undefined;
@@ -1093,7 +1093,7 @@ getText = Sizzle.getText = function( elem ) {
 		}
 	} else if ( nodeType === 1 || nodeType === 9 || nodeType === 11 ) {
 		// Use textContent for elements
-		// innerText usage removed for consistency of new lines (jQuery #11153)
+		// innerText usage removed for consistency of new lines (jquery #11153)
 		if ( typeof elem.textContent === "string" ) {
 			return elem.textContent;
 		} else {
@@ -1302,7 +1302,7 @@ Expr = Sizzle.selectors = {
 							outerCache = node[ expando ] || (node[ expando ] = {});
 
 							// Support: IE <9 only
-							// Defend against cloned attroperties (jQuery gh-1709)
+							// Defend against cloned attroperties (jquery gh-1709)
 							uniqueCache = outerCache[ node.uniqueID ] ||
 								(outerCache[ node.uniqueID ] = {});
 
@@ -1331,7 +1331,7 @@ Expr = Sizzle.selectors = {
 								outerCache = node[ expando ] || (node[ expando ] = {});
 
 								// Support: IE <9 only
-								// Defend against cloned attroperties (jQuery gh-1709)
+								// Defend against cloned attroperties (jquery gh-1709)
 								uniqueCache = outerCache[ node.uniqueID ] ||
 									(outerCache[ node.uniqueID ] = {});
 
@@ -1357,7 +1357,7 @@ Expr = Sizzle.selectors = {
 											outerCache = node[ expando ] || (node[ expando ] = {});
 
 											// Support: IE <9 only
-											// Defend against cloned attroperties (jQuery gh-1709)
+											// Defend against cloned attroperties (jquery gh-1709)
 											uniqueCache = outerCache[ node.uniqueID ] ||
 												(outerCache[ node.uniqueID ] = {});
 
@@ -1744,7 +1744,7 @@ function addCombinator( matcher, combinator, base ) {
 						outerCache = elem[ expando ] || (elem[ expando ] = {});
 
 						// Support: IE <9 only
-						// Defend against cloned attroperties (jQuery gh-1709)
+						// Defend against cloned attroperties (jquery gh-1709)
 						uniqueCache = outerCache[ elem.uniqueID ] || (outerCache[ elem.uniqueID ] = {});
 
 						if ( skip && skip === elem.nodeName.toLowerCase() ) {

@@ -26,11 +26,11 @@ define( [
 var
 	version = "3.2.1",
 
-	// Define a local copy of jQuery
+	// Define a local copy of jquery
 	jQuery = function( selector, context ) {
 
-		// The jQuery object is actually just the init constructor 'enhanced'
-		// Need init if jQuery is called (just allow error to be thrown if not included)
+		// The jquery object is actually just the init constructor 'enhanced'
+		// Need init if jquery is called (just allow error to be thrown if not included)
 		return new jQuery.fn.init( selector, context );
 	},
 
@@ -42,19 +42,19 @@ var
 	rmsPrefix = /^-ms-/,
 	rdashAlpha = /-([a-z])/g,
 
-	// Used by jQuery.camelCase as callback to replace()
+	// Used by jquery.camelCase as callback to replace()
 	fcamelCase = function( all, letter ) {
 		return letter.toUpperCase();
 	};
 
 jQuery.fn = jQuery.prototype = {
 
-	// The current version of jQuery being used
+	// The current version of jquery being used
 	jquery: version,
 
 	constructor: jQuery,
 
-	// The default length of a jQuery object is 0
+	// The default length of a jquery object is 0
 	length: 0,
 
 	toArray: function() {
@@ -78,7 +78,7 @@ jQuery.fn = jQuery.prototype = {
 	// (returning the new matched element set)
 	pushStack: function( elems ) {
 
-		// Build a new jQuery matched element set
+		// Build a new jquery matched element set
 		var ret = jQuery.merge( this.constructor(), elems );
 
 		// Add the old object onto the stack (as a reference)
@@ -122,7 +122,7 @@ jQuery.fn = jQuery.prototype = {
 	},
 
 	// For internal use only.
-	// Behaves like an Array's method, not like a jQuery method.
+	// Behaves like an Array's method, not like a jquery method.
 	push: push,
 	sort: arr.sort,
 	splice: arr.splice
@@ -149,7 +149,7 @@ jQuery.extend = jQuery.fn.extend = function() {
 		target = {};
 	}
 
-	// Extend jQuery itself if only one argument is passed
+	// Extend jquery itself if only one argument is passed
 	if ( i === length ) {
 		target = this;
 		i--;
@@ -199,10 +199,10 @@ jQuery.extend = jQuery.fn.extend = function() {
 
 jQuery.extend( {
 
-	// Unique for each copy of jQuery on the page
+	// Unique for each copy of jquery on the page
 	expando: "jQuery" + ( version + Math.random() ).replace( /\D/g, "" ),
 
-	// Assume jQuery is ready without the ready module
+	// Assume jquery is ready without the ready module
 	isReady: true,
 
 	error: function( msg ) {
@@ -221,7 +221,7 @@ jQuery.extend( {
 
 	isNumeric: function( obj ) {
 
-		// As of jQuery 3.0, isNumeric is limited to
+		// As of jquery 3.0, isNumeric is limited to
 		// strings and numbers (primitives or objects)
 		// that can be coerced to finite numbers (gh-2662)
 		var type = jQuery.type( obj );
@@ -237,7 +237,7 @@ jQuery.extend( {
 		var proto, Ctor;
 
 		// Detect obvious negatives
-		// Use toString instead of jQuery.type to catch host objects
+		// Use toString instead of jquery.type to catch host objects
 		if ( !obj || toString.call( obj ) !== "[object Object]" ) {
 			return false;
 		}
@@ -440,7 +440,7 @@ jQuery.extend( {
 
 	now: Date.now,
 
-	// jQuery.support is not used in Core but other projects attach their
+	// jquery.support is not used in Core but other projects attach their
 	// properties to it so it needs to exist.
 	support: support
 } );
