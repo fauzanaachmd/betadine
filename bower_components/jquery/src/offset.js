@@ -49,7 +49,7 @@ jQuery.offset = {
 
 		if ( jQuery.isFunction( options ) ) {
 
-			// Use jquery.extend here to allow modification of coordinates argument (gh-1848)
+			// Use jQuery.extend here to allow modification of coordinates argument (gh-1848)
 			options = options.call( elem, i, jQuery.extend( {}, curOffset ) );
 		}
 
@@ -205,7 +205,7 @@ jQuery.each( { scrollLeft: "pageXOffset", scrollTop: "pageYOffset" }, function( 
 } );
 
 // Support: Safari <=7 - 9.1, Chrome <=37 - 49
-// Add the top/left cssHooks using jquery.fn.position
+// Add the top/left cssHooks using jQuery.fn.position
 // Webkit bug: https://bugs.webkit.org/show_bug.cgi?id=29084
 // Blink bug: https://bugs.chromium.org/p/chromium/issues/detail?id=589347
 // getComputedStyle returns percent when specified for top/left/bottom/right;

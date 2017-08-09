@@ -704,8 +704,11 @@ a {
   padding: 30px 0 329px 0;
   position: relative;
 
-  @media (max-width: 480px) {
-
+  @media (max-width: 768px) {
+    &:after {
+      background: url("../img/section13-footer-bg-mobile.png") no-repeat left bottom !important;
+      background-size: cover !important;
+    }
   }
   &:after {
     position: absolute;
@@ -715,8 +718,9 @@ a {
     bottom: 0;
     background: url("../img/section13-footer-bg.png") no-repeat center;
     @media (max-width: 480px) {
+      background: url("../img/section13-footer-bg-mobile.png") no-repeat !important;
       background-position: left;
-      background-size: contain;
+      background-size: contain !important;
     }
   }
   .custom-banner-butterfly {

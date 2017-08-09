@@ -9,7 +9,7 @@ define( [
 
 "use strict";
 
-// A central reference to the root jquery(document)
+// A central reference to the root jQuery(document)
 var rootjQuery,
 
 	// A simple way to check for HTML strings
@@ -27,7 +27,7 @@ var rootjQuery,
 		}
 
 		// Method init() accepts an alternate rootjQuery
-		// so migrate can support jquery.sub (gh-2101)
+		// so migrate can support jQuery.sub (gh-2101)
 		root = root || rootjQuery;
 
 		// Handle HTML strings
@@ -81,7 +81,7 @@ var rootjQuery,
 
 					if ( elem ) {
 
-						// Inject the element directly into the jquery object
+						// Inject the element directly into the jQuery object
 						this[ 0 ] = elem;
 						this.length = 1;
 					}
@@ -117,7 +117,7 @@ var rootjQuery,
 		return jQuery.makeArray( selector, this );
 	};
 
-// Give the init function the jquery prototype for later instantiation
+// Give the init function the jQuery prototype for later instantiation
 init.prototype = jQuery.fn;
 
 // Initialize central reference

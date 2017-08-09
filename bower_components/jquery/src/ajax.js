@@ -10,7 +10,7 @@ define( [
 	"./ajax/parseXML",
 	"./event/trigger",
 	"./deferred",
-	"./serialize" // jquery.param
+	"./serialize" // jQuery.param
 ], function( jQuery, document, rnothtmlwhite, location, nonce, rquery ) {
 
 "use strict";
@@ -51,7 +51,7 @@ var
 	originAnchor = document.createElement( "a" );
 	originAnchor.href = location.href;
 
-// Base "constructor" for jquery.ajaxPrefilter and jquery.ajaxTransport
+// Base "constructor" for jQuery.ajaxPrefilter and jQuery.ajaxTransport
 function addToPrefiltersOrTransports( structure ) {
 
 	// dataTypeExpression is optional and defaults to "*"
@@ -427,7 +427,7 @@ jQuery.extend( {
 			// Callbacks context
 			callbackContext = s.context || s,
 
-			// Context for global events is callbackContext if it is a DOM node or jquery collection
+			// Context for global events is callbackContext if it is a DOM node or jQuery collection
 			globalEventContext = s.context &&
 				( callbackContext.nodeType || callbackContext.jquery ) ?
 					jQuery( callbackContext ) :
@@ -571,7 +571,7 @@ jQuery.extend( {
 		}
 
 		// We can fire global events as of now if asked to
-		// Don't fire events if jquery.event is undefined in an AMD-usage scenario (#15118)
+		// Don't fire events if jQuery.event is undefined in an AMD-usage scenario (#15118)
 		fireGlobals = jQuery.event && s.global;
 
 		// Watch for a new set of requests

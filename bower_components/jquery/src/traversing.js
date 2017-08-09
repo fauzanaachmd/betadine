@@ -84,7 +84,7 @@ jQuery.fn.extend( {
 		// Locate the position of the desired element
 		return indexOf.call( this,
 
-			// If it receives a jquery object, the first element is used
+			// If it receives a jQuery object, the first element is used
 			elem.jquery ? elem[ 0 ] : elem
 		);
 	},

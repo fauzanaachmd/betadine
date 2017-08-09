@@ -62,7 +62,7 @@ jQuery.extend( {
 	}
 } );
 
-// Make jquery.ready Promise consumable (gh-1778)
+// Make jQuery.ready Promise consumable (gh-1778)
 jQuery.ready.then = jQuery.fn.ready;
 
 /**

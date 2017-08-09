@@ -11,7 +11,7 @@ define( [
 /*
  * Optional (non-Sizzle) selector module for custom builds.
  *
- * Note that this DOES NOT SUPPORT many documented jquery
+ * Note that this DOES NOT SUPPORT many documented jQuery
  * features in exchange for its smaller size:
  *
  * Attribute not equal selector
@@ -226,7 +226,7 @@ jQuery.extend( jQuery.find, {
 	attr: function( elem, name ) {
 		var fn = jQuery.expr.attrHandle[ name.toLowerCase() ],
 
-			// Don't get fooled by Object.prototype properties (jquery #13807)
+			// Don't get fooled by Object.prototype properties (jQuery #13807)
 			value = fn && hasOwn.call( jQuery.expr.attrHandle, name.toLowerCase() ) ?
 				fn( elem, name, jQuery.isXMLDoc( elem ) ) :
 				undefined;

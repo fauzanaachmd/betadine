@@ -4,7 +4,7 @@ define( [
 	"./var/rmargin",
 	"./var/getStyles",
 	"./support",
-	"../selector" // Get jquery.contains
+	"../selector" // Get jQuery.contains
 ], function( jQuery, rnumnonpx, rmargin, getStyles, support ) {
 
 "use strict";
