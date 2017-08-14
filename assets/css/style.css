@@ -434,6 +434,11 @@ a {
     width: 100%;
   }
 }
+@media (min-width: 901px) {
+  .illustration2 {
+    width: 65%;
+  }
+}
 @media (max-width: 600px) {
   .section5 .illustration {
     width: 100%;
@@ -545,6 +550,7 @@ a {
   width: 510px;
   height: 474px;
   position: absolute;
+  background-size: 630px 474px;
   top: 90px;
   left: 0;
 }
@@ -621,6 +627,11 @@ a {
   .section9 .cewek-wrapper img {
     width: 80px;
   }
+	.section9 .cewek-wrapper {
+	  position: absolute;
+	  bottom: 0;
+	  right: 10;
+	}
 }
 
 /* END OF SECTION 9 STYLE */
